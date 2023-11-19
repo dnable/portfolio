@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-color: #1B2430;
+    --text-color: #D6D5A8;
+    --secondary-color: #51557E;
+    --tertiary-color: #816797;
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: var(--background-color);
+    overflow-x: hidden;
+}
+
+
+/* Navbar */
+.navbar {
+    background: var(--background-color);
+    padding: 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo a {
+    color: black;    
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.navbar a:hover {
+    color: var(--text-color);
+}
+
+.navbar .main-menu ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+    font-weight: lighter;
+    transition: 0.5s;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Section Hero */
+.hero .container {
+    background: var(--secondary-color);
+    margin: 5px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero-heading {
+    padding: 20px;
+    display: block;
+    margin: auto;
+}
+
+.hero-image {
+    padding: 20px;
+}
+
+.hero-image img {
+    border-radius: 999px;
+    max-width: 70%;
+}
+
+
+
+/* Section Projects */
+.projects .container {
+    background: var(--secondary-color);
+    margin: 5px 40px;
+}
+
+.projects-content {
+    padding: 10px;
+}
+
+
+/* Hamburger Button */
+.hamburger-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.hamburger-button .hamburger-line {
+    width: 30px;
+    height: 3px;
+    background: #333;
+    margin: 6px 0;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 250px;
+    height: 100%;
+    z-index: 100;
+    background: black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3 ease-in-out;
+}
+
+.mobile-menu.active {
+    right: 0px;
+}       
+
+.mobile-menu ul {
+    margin-top: 100px;
+    padding-right: 10px;
+    color: white;
+
+}
+
+.mobile-menu ul li {
+    margin: 10px 0
+}
+
+.mobile-menu ul li a {
+    font-size: 20px;
+    transition: 0.3s;
+    color: white;
+}
+
+
+
+
+
+
+
+/* Media Queries */
+@media (max-width: 960px) {
+   
+}
+
+@media (max-width: 670px) {
+    .navbar .main-menu {
+        display: none;
+    }
+
+    .navbar .hamburger-button {
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    
+}
