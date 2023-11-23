@@ -5,10 +5,12 @@
 }
 
 :root {
-    --background-color: #1B2430;
-    --text-color: #D6D5A8;
-    --secondary-color: #51557E;
-    --tertiary-color: #816797;
+    --background-color: #041E42;
+    --primary-color: #D50032;
+    --secondary-color: #FF6720;
+    --tertiary-color: #00843D;
+    --quaternary-color: #0085CA;
+
 }
 
 body {
@@ -39,11 +41,12 @@ body {
 }
 
 .navbar a:hover {
-    color: var(--text-color);
+    color: var(--primary-color);
 }
 
 .navbar .main-menu ul {
-    display: flex;
+    display: flex;    
+    list-style: none;
 }
 
 .navbar ul li a {
@@ -56,9 +59,80 @@ body {
 }
 
 
+/* Spectrum Colors - Left Top */
+.primary-border-left-top {
+    border: 5px;
+    border-style: solid;
+    border-left-color: var(--primary-color);
+    border-top-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.secondary-border-left-top {
+    border: 5px;
+    border-style: solid;
+    border-left-color: var(--secondary-color);
+    border-top-color: var(--secondary-color);
+    color: var(--background-color);
+}
+
+.tertiary-border-left-top {
+    border: 5px;
+    border-style: solid;
+    border-left-color: var(--tertiary-color);
+    border-top-color: var(--tertiary-color);  
+    color: var(--background-color);
+}
+
+.quaternary-border-left-top {
+    border: 5px;
+    border-style: solid;
+    border-left-color: var(--quaternary-color);
+    border-top-color: var(--quaternary-color);
+    color: var(--background-color);
+}
+
+/* Spectrum Colors - Right Bottom */
+.primary-border-right-bottom {
+    border: 5px;
+    border-style: solid;
+    border-right-color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.secondary-border-right-bottom {
+    border: 5px;
+    border-style: solid;
+    border-right-color: var(--secondary-color);
+    border-bottom-color: var(--secondary-color);
+    color: var(--background-color);
+}
+
+.tertiary-border-right-bottom {
+    border: 5px;
+    border-style: solid;
+    border-right-color: var(--tertiary-color);
+    border-bottom-color: var(--tertiary-color);  
+    color: var(--background-color);
+}
+
+.quaternary-border-right-bottom {
+    border: 5px;
+    border-style: solid;
+    border-right-color: var(--quaternary-color);
+    border-bottom-color: var(--quaternary-color);
+    color: var(--background-color);
+}
+
+
+
 /* Section Hero */
 .hero .container {
-    background: var(--secondary-color);
+    padding: 40px;
+}
+
+.hero-content {
     margin: 5px 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -66,8 +140,12 @@ body {
 
 .hero-heading {
     padding: 20px;
-    display: block;
     margin: auto;
+    color: white;
+}
+
+.hero-heading h1 {
+    padding-bottom: 10px;
 }
 
 .hero-image {
@@ -76,20 +154,148 @@ body {
 
 .hero-image img {
     border-radius: 999px;
-    max-width: 70%;
+    max-width: 50%;
+    display: block;
+    margin: auto;
 }
 
 
+/* Section Stack */
+.stack .container {
+    padding: 100px 0px 50px 100px;    
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+
+.stack-container-content {
+    display: grid;
+    grid-template-columns: 1fr 15fr;
+}
+
+.color-scheme {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    padding-right: 10px;
+}
+
+.primary-block {
+    background-color: var(--primary-color);
+    margin-bottom: 2px;
+}
+
+.secondary-block {
+    background-color: var(--secondary-color);
+    margin-bottom: 2px;
+}
+
+.tertiary-block {
+    background-color: var(--tertiary-color);
+    margin-bottom: 2px;
+}
+
+.quaternary-block {
+    background-color: var(--quaternary-color);
+    margin-bottom: 2px;
+}
+
+.stack-content {
+    margin: auto;
+}
+
+.stack-logos {    
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    align-items: center;
+}
+
+.stack-logos img {
+    max-width: 40%;        
+    display: block;
+    margin: auto;
+}
+
+.stack-logos h5 {
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+}
 
 /* Section Projects */
 .projects .container {
-    background: var(--secondary-color);
-    margin: 5px 40px;
+    padding: 40px;
 }
 
-.projects-content {
-    padding: 10px;
+.projects-header {
+    color: white;
+    display: block;
+    margin: auto;
+    padding-left: 40px;
 }
+
+.projects-content {    
+    color: white;
+    margin: 5px 40px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.projects-content h4 {
+    color: white;
+}
+
+/* Project Card */
+.project-card {
+    display: grid;
+    grid-template-columns: 1fr 4fr; 
+    padding: 10px 0px;
+}
+
+.project-card-img img {
+    max-width: 100%;    
+}
+
+.project-card-content {
+    padding: 0px 10px;
+}
+
+.project-card-content i {
+    padding: 20px 5px;    
+}
+
+.project-card-content i.html {
+    color: var(--secondary-color);
+}
+
+.project-card-content i.css {
+    color: var(--quaternary-color);
+}
+
+.project-card-content i.js {
+    color: yellow;
+}
+
+.project-card-content i.python {
+    color: lightskyblue;
+}
+
+.project-card-content iconify-icon.django {
+    color: lightseagreen;    
+}
+
+.project-card-content a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+.project-card-content a:visited {
+    color: var(--tertiary-color);
+}
+
+.code-link {
+    margin-right: 25px;
+}
+
+
 
 
 /* Hamburger Button */
@@ -130,7 +336,7 @@ body {
     margin-top: 100px;
     padding-right: 10px;
     color: white;
-
+    list-style: none;
 }
 
 .mobile-menu ul li {
@@ -144,17 +350,57 @@ body {
 }
 
 
+/* Text Classes */
+.text-xxl {
+    font-size: 2.2rem;    
+    line-height: 1;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.text-xl {
+    font-size: 1.6rem;    
+    line-height: 1.4;
+    font-weight: bold;
+    color: whitesmoke;    
+}
+
+.text-lg {
+    font-size: 1.0rem;    
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.text-md {
+    font-size: 1.0rem;    
+    line-height: 1.4;
+    font-weight: normal;    
+}
+
+.text-sm {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    font-weight: normal;
+}
+
+.text-center {
+    text-align: center;
+}
 
 
 
 
 
 /* Media Queries */
-@media (max-width: 960px) {
-   
+@media (min-width: 670px) {
+    .card-img-header {
+        display: none;
+       }
 }
 
 @media (max-width: 670px) {
+    
+    /* Navbar */
     .navbar .main-menu {
         display: none;
     }
@@ -162,8 +408,197 @@ body {
     .navbar .hamburger-button {
         display: block;
     }
+
+     /* Section Hero */
+     .hero-content {
+        margin: 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Spectrum Colors - Left Top */
+    .primary-border-left-top {
+        border: 3px;
+        border-style: solid;        
+        border-top-color: var(--primary-color);
+        color: var(--background-color);
+    }
+
+    .secondary-border-left-top {
+        border: 3px;
+        border-style: solid;        
+        border-top-color: var(--secondary-color);
+        color: var(--background-color);
+    }
+
+    .tertiary-border-left-top {
+        border: 3px;
+        border-style: solid;        
+        border-top-color: var(--tertiary-color);  
+        color: var(--background-color);
+    }
+
+    .quaternary-border-left-top {
+        border: 3px;
+        border-style: solid;        
+        border-top-color: var(--quaternary-color);
+        color: var(--background-color);
+    }   
+
+
+    /* Section Stack */
+    .stack .container {
+        grid-template-columns: 1fr;
+        padding: 0px 0px 0px 40px;
+    }
+
+    .stack-container-content {
+        padding: 10px 0px 0px 0px;            
+        grid-template-columns: 1fr 8fr;
+    }
+
+    .stack-logos {            
+        grid-template-columns: repeat(6, 1fr);        
+    }
+
+
+    /* Section Projects */
+    .projects-header {
+        padding-left: 0px;
+    }
+
+    .projects-content {            
+        margin: 5px 0px;        
+        grid-template-rows: repeat(2, 1fr);        
+    }
+
+    .project-card {        
+        grid-template-columns: 1fr 3fr;
+        padding: 10px 0px;
+    }
+
+    .card-img-header {
+        display: none;
+       }
+
+    .code-link {
+        margin-right: 20px;
+    }
+
+        
+    /* Spectrum Colors - Right Bottom */
+    .primary-border-right-bottom {
+        border: 3px;
+        border-style: solid;        
+        border-bottom-color: var(--primary-color);
+        color: var(--background-color);
+    }
+
+    .secondary-border-right-bottom {
+        border: 3px;
+        border-style: solid;        
+        border-bottom-color: var(--secondary-color);
+        color: var(--background-color);
+    }
+
+    .tertiary-border-right-bottom {
+        border: 3px;
+        border-style: solid;        
+        border-bottom-color: var(--tertiary-color);  
+        color: var(--background-color);
+    }
+
+    .quaternary-border-right-bottom {
+        border: 3px;
+        border-style: solid;        
+        border-bottom-color: var(--quaternary-color);
+        color: var(--background-color);
+    }
+
+
+    /* Text */
+    .text-xxl {
+        font-size: 0.95rem;            
+        font-weight: bold;
+        color: whitesmoke;
+    }
+
+    .text-xl {
+        font-size: 0.85rem;
+    }
+
+    .text-lg {
+        font-size: 0.75rem;
+        font-weight: lighter;
+    }
+
+    .text-md {
+        font-size: 0.70rem;
+        font-weight: lighter;
+    }
+
+    .text-sm {
+        font-size: 0.7rem;
+        font-weight: lighter;
+    }
 }
 
-@media (max-width: 500px) {
-    
+@media (max-width: 435px) { 
+    /* Section Hero */
+    .hero .container {
+        padding: 0px 0px 50px 0px;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;                
+        text-align: center;
+    }
+
+    .hero-heading {
+        padding: 0px;        
+    }  
+
+    /* Section Stack */
+    .stack .container {
+        padding: 0px 10px;
+    }
+
+    .stack-logos {            
+        grid-template-columns: repeat(5, 1fr);        
+    }   
+
+    /* Section Projects */
+    .projects .container {
+        padding: 40px 0px;
+        text-align: center;        
+    }
+
+    .project-card {
+        grid-template-columns: 1fr;
+    }
+
+    .card-content-header {
+        display: none;
+    }
+
+    .card-img-header {
+        display: grid;
+       }
+
+    .project-card {
+        padding: 15px 0px;
+    }
+
+    .project-card-img {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .project-card-content i {
+        display: none;
+    }
+
+    .project-card-content iconify-icon {
+        display: none;
+    }
 }

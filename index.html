@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Darryl Nable</title>
+    <title>Darryl Nable - Portfolio</title>
 
-    
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+    <!-- iconify icons -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,15 +26,6 @@
 
             <div class="main-menu">
                 <ul>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Stack</a>
-                    </li>   
-                    <li>
-                        <a href="#">Projects</a>
-                    </li>
                     <li>
                         <a href="#">Resume</a>
                     </li>                    
@@ -62,50 +59,149 @@
     <!-- Section Hero -->
     <div class="hero">
         <div class="container">
-            <div class="hero-heading">
-                <h1>
-                    Hello! I'm Darryl Nable
-                </h1>
-                <p>
-                    a full stack developer based in New Jersey. Explore my portfolio and see my skills in action. Thanks for stopping by.
-                </p>
-            </div>
+            <div class="primary-border-left-top">
+                <div class="secondary-border-left-top">
+                    <div class="tertiary-border-left-top">
+                        <div class="quaternary-border-left-top">
 
-            <div class="hero-image">
-                <img src="images/headshot.png" alt="">
+                            <div class="hero-content">
+                                <div class="hero-image">
+                                    <img src="images/headshot.png" alt="">
+                                </div>
+                                
+                                <div class="hero-heading">
+                                    <h1 class="text-xxl">
+                                        Hello! I'm Darryl Nable
+                                    </h1>
+                                    <p class="text-lg">
+                                        a full stack developer based in Philadelphia, PA. Explore my portfolio and see my skills in action. Thanks for stopping by.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
 
-    <!-- Section About Me -->
-
-
     <!-- Section Tech Stack -->
+    <div class="stack">
+        <div class="container">
+            <div class="stack-header">
+                <h1 class="text-xl">Tech Stack</h1>
+            </div>
+            
+            <div class="stack-container-content">
+
+                <div class="color-scheme">
+                    <div class="primary-block"></div>
+                    <div class="secondary-block"></div>
+                    <div class="tertiary-block"></div>
+                    <div class="quaternary-block"></div>
+                </div>
+                
+                <div class="stack-content">
+                    <div class="stack-logos">                    
+                        <div class="html">
+                            <img src="images/html5.png" alt="html">
+                            <h5 class="text-sm">HTML5</h5>
+                        </div>
+                        <div class="css">
+                            <img src="images/css3.png" alt="css">
+                            <h5 class="text-sm">CSS3</h5>
+                        </div>
+                        <div class="javascript">
+                            <img src="images/javascript.png" alt="javascript">
+                            <h5 class="text-sm">JavaScript</h5>
+                        </div>
+                        <div class="python">
+                            <img src="images/python.png" alt="python">
+                            <h5 class="text-sm">Python</h5>
+                        </div>
+                        <div class="django">
+                            <img src="images/django.png" alt="django">
+                            <h5 class="text-sm">django</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Section Projects -->
     <div class="projects">
         <div class="container">
-            <div class="projects-header">
-                <h3>Projects</h3>
-            </div>
+            <div class="primary-border-right-bottom">
+                <div class="secondary-border-right-bottom">
+                    <div class="tertiary-border-right-bottom">
+                        <div class="quaternary-border-right-bottom">
 
-            <div class="projects-content">
+                            <div class="projects-header">
+                                <h3 class="text-xl">Projects</h3>
+                            </div>
                 
-                <h4>Good Shepherd Website</h4>
-                
-                <a href="https://github.com/dnable/tcgsch-website" target="_blank">Code</a>
-                <a href="https://tcgsch.netlify.app/" target="_blank">Live</a>                
+                            <div class="projects-content">
+                                <div class="project-card">
+                                    <h4 class="card-img-header text-lg">The Church of the Good Shepherd</h4>
+                                    <div class="project-card-img">
+                                        <img src="images/goodshepherd.png" alt="goodshepherd">
+                                    </div>
+                                    <div class="project-card-content">
+
+                                        <h4 class="card-content-header text-lg">The Church of the Good Shepherd</h4>
+                                        <i class="fa-brands fa-html5 fa-2xl html"></i>
+                                        <i class="fa-brands fa-css3-alt fa-2xl css"></i>
+                                        <i class="fa-brands fa-js fa-2xl js"></i>                                        
+                                        <p class="text-md">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, obcaecati quibusdam itaque dolorum modi enim magni aperiam eum veritatis amet qui. Optio porro fugit unde cum excepturi laudantium earum itaque harum, quam eos aut enim ullam velit, praesentium laboriosam. Obcaecati voluptatibus incidunt non laborum sapiente aliquid facere fuga ab et!
+                                        </p>
+                                        <a href="https://github.com/dnable/tcgsch-website" target="_blank" class="code-link text-md"><i class="fa-brands fa-github fa-sm"></i> Code</a>
+                                        <a href="https://tcgsch.netlify.app/" target="_blank" class="text-md"><i class="fa-solid fa-desktop fa-sm"></i> Live</a>                
+                                    </div>
+                                </div>
+
+
+                                <div class="project-card">
+                                    <div class="project-card-img">
+                                        <h4 class="card-img-header text-lg">Twitter Replica</h4>
+                                        <img src="images/twitter-replica.png" alt="goodshepherd">
+                                    </div>
+                                    <div class="project-card-content">
+
+                                        <h4 class="card-content-header text-lg">Twitter Replica</h4>
+                                        <i class="fa-brands fa-html5 fa-2xl html"></i>
+                                        <i class="fa-brands fa-css3-alt fa-2xl css"></i>
+                                        <i class="fa-brands fa-js fa-2xl js"></i>
+                                        <i class="fa-brands fa-python fa-2xl python"></i>
+                                        <iconify-icon icon="simple-icons:django" class="django" height="24" width="24"></iconify-icon>
+                                        <p class="text-md">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo itaque officia alias, in excepturi quod! Quibusdam libero fugit sequi doloribus blanditiis magni itaque earum. Ipsam cum impedit dolores nobis, pariatur repudiandae, fugiat at doloremque sint voluptates deserunt doloribus. Ad culpa fuga maiores laudantium accusamus distinctio, eaque in, voluptatem facere quibusdam ipsum? Velit quo dignissimos odio reiciendis beatae deserunt suscipit animi.
+                                        </p>
+                                        <a href="https://github.com/dnable/djangoTwitter" target="_blank" class="code-link text-md"><i class="fa-brands fa-github fa-sm"></i> Code</a>
+                                        <a href="#" target="_blank" class="text-md"><i class="fa-solid fa-desktop fa-sm"></i> Live</a>                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
+ 
 
     <!-- Resume -->
 
 
     <!-- Footer / Contact Links -->
 
+
+    <script src="js/main.js"></script>
 </body>
 </html>
