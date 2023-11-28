@@ -26,6 +26,9 @@ body {
 .navbar {
     background: var(--background-color);
     padding: 20px;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
 }
 
 .navbar .container {
@@ -128,12 +131,14 @@ body {
 
 
 /* Section Hero */
+.hero {
+    padding-top: 50px;
+}
 .hero .container {
     padding: 40px;
 }
 
 .hero-content {
-    margin: 5px 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -148,6 +153,10 @@ body {
     padding-bottom: 10px;
 }
 
+#hero-blurb {
+    padding: 10px 0px;
+}
+
 .hero-image {
     padding: 20px;
 }
@@ -159,12 +168,29 @@ body {
     margin: auto;
 }
 
+.hero-heading .links {
+    padding-top: 10px;
+}
+
+.hero-heading .links a {
+    padding-right: 10px;
+}
+
 
 /* Section Stack */
+.stack {
+    padding-bottom: 150px;
+}
+
 .stack .container {
     padding: 100px 0px 50px 100px;    
     display: grid;
     grid-template-rows: 1fr 3fr;
+}
+
+.stack .container .stack-header {
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 .stack-container-content {
@@ -204,7 +230,7 @@ body {
 
 .stack-logos {    
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     align-items: center;
 }
 
@@ -230,6 +256,9 @@ body {
     display: block;
     margin: auto;
     padding-left: 40px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 20px;
 }
 
 .projects-content {    

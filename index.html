@@ -17,7 +17,7 @@
 <body>
     
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="container">
             <div class="logo">
                 <a href="index.html">
@@ -27,7 +27,13 @@
             <div class="main-menu">
                 <ul>
                     <li>
-                        <a href="#">Resume</a>
+                        <a href="#hero">Home</a>
+                    </li>
+                    <li>
+                        <a href="#stack">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
                     </li>                    
                 </ul>
             </div>
@@ -40,16 +46,13 @@
             <div class="mobile-menu">
                 <ul>
                     <li>
-                        <a href="#">About</a>
+                        <a href="#hero">Home</a>
                     </li>
                     <li>
-                        <a href="#">Stack</a>
+                        <a href="#stack">Skills</a>
                     </li>   
                     <li>
-                        <a href="#">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#">Resume</a>
+                        <a href="#portfolio">Portfolio</a>
                     </li>                    
                 </ul>
             </div>
@@ -57,7 +60,7 @@
     </nav>
 
     <!-- Section Hero -->
-    <div class="hero">
+    <div class="hero" id="hero">
         <div class="container">
             <div class="primary-border-left-top">
                 <div class="secondary-border-left-top">
@@ -73,9 +76,14 @@
                                     <h1 class="text-xxl">
                                         Hello! I'm Darryl Nable
                                     </h1>
-                                    <p class="text-lg">
-                                        a full stack developer based in Philadelphia, PA. Explore my portfolio and see my skills in action. Thanks for stopping by.
+                                    <p class="text-md" id="hero-blurb">
+                                        a dedicated front-end developer in Philadelphia, PA, committed to delivering sophisticated and efficient digital solutions.
                                     </p>
+                                    
+                                    <div class="links">
+                                        <a href="https://www.linkedin.com/in/darryl-nable-b48804170/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                                        <a href="https://github.com/dnable" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -88,20 +96,21 @@
 
 
     <!-- Section Tech Stack -->
-    <div class="stack">
+    <div class="stack" id="stack">
         <div class="container">
             <div class="stack-header">
-                <h1 class="text-xl">Tech Stack</h1>
+                <p class="text-xl">Skills</p>
             </div>
             
-            <div class="stack-container-content">
+            <!-- <div class="stack-container-content"> -->
 
-                <div class="color-scheme">
+                <!-- stacked color scheme -->
+                <!-- <div class="color-scheme">
                     <div class="primary-block"></div>
                     <div class="secondary-block"></div>
                     <div class="tertiary-block"></div>
                     <div class="quaternary-block"></div>
-                </div>
+                </div> -->
                 
                 <div class="stack-content">
                     <div class="stack-logos">                    
@@ -127,13 +136,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
         </div>
     </div>
 
 
     <!-- Section Projects -->
-    <div class="projects">
+    <div class="projects" id="portfolio">
         <div class="container">
             <div class="primary-border-right-bottom">
                 <div class="secondary-border-right-bottom">
@@ -182,7 +191,7 @@
                                             Django Twitter Clone is a full-stack web application that recreates the essence of Twitter, offering a streamlined and customizable microblogging experience. Leveraging the power of Django, this project aimed to provide users with a familiar platform for real-time sharing of thoughts, updates, and conversations. I implemented a secure user authentication process to ensure a personalized and safe experience for each user. Users can compose and delete tweets. Each user has a personalized profile page displaying their tweets, followers, and following. Developed a robust follow system, allowing users to connect with others and curate their timeline based on the content they find interesting. Ensured a responsive design for seamless user experience across devices. 
                                         </p>
                                         <a href="https://github.com/dnable/djangoTwitter" target="_blank" class="code-link text-md"><i class="fa-brands fa-github fa-sm"></i> Code</a>
-                                        <a href="#" target="_blank" class="text-md"><i class="fa-solid fa-desktop fa-sm"></i> Live</a>                
+                                        <!-- <a href="#" target="_blank" class="text-md"><i class="fa-solid fa-desktop fa-sm"></i> Live</a>                 -->
                                     </div>
                                 </div>
                             </div>
