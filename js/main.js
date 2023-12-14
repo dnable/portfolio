@@ -5,16 +5,20 @@ document.addEventListener('DOMContentLoaded', () =>  {
 
     hamburgerButton.addEventListener('click', () => mobileMenu.classList.toggle('active'));
 
+    //TODO: inactive hamburger menu on any other click
+    
     
     // Project Card animation
     function toggleActive() {            
         
+        //activate related project elements
         var activateElements = document.querySelectorAll('#' + this.id);
         for (var i = 0; i < activateElements.length; i++) {
             activateElements[i].classList.toggle('active');
         }
+    
 
-        //inactive any active elements
+        //inactive any unrelated active project-card elements
         var projectCards = document.getElementsByClassName('project-card');
         for (var i = 0; i < projectCards.length; i++) {
             if  (projectCards[i].id != this.id && projectCards[i].classList[1] == 'active'){
@@ -22,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () =>  {
             }
         }
 
+        //inactive any unrelated active project-description elements 
         var projectDescription = document.getElementsByClassName('project-description');
         for (var i = 0; i < projectDescription.length; i++) {
             if  (projectDescription[i].id != this.id && projectDescription[i].classList[1] == 'active'){

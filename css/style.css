@@ -28,7 +28,7 @@ body {
     background-color: var(--background-container-color);
     border-color: var(--background-color);
     border-style: solid;
-    border-width: 0px 80px;
+    border-width: 0px 5vw;
 }
 
 /* Navbar */
@@ -37,14 +37,14 @@ body {
     position: sticky;
     z-index: 100;
     top: 0;
-    border-top: 25px solid var(--background-color);
+    border-top: 3vh solid var(--background-color);
 }
 
 .navbar .container {    
     display: flex;
     align-items: center;
     justify-content: space-between;     
-    padding: 10px 40px;
+    padding: 1vh 2vw;
 }
 
 .navbar .container .logo a {
@@ -65,7 +65,7 @@ body {
 }
 
 .navbar ul li a {
-    padding: 7px 20px;    
+    padding: 1vh 1vw;    
     font-weight: lighter;
     transition: 0.5s;
     color: var(--regular-text);
@@ -85,12 +85,11 @@ body {
 
 /* Section Hero */
 .hero .container {
-    padding: 0px 40px 100px 40px;  
+    padding: 0px 2vw 20vh 2vw;  
     display: flex;    
 }
 
 .hero .container .hero-heading {    
-    /* padding-top: 40px; */
     color: var(--regular-text);    
     margin: auto;
 }
@@ -101,6 +100,7 @@ body {
 
 .hero .container .hero-image img {
     border-radius: 50px;
+    max-width: 60vw;
 }
 
 .hero .container .hero-heading #job-title {
@@ -109,24 +109,23 @@ body {
 
 #portfolioText {
     color: var(--special-text);
-    /* border: 1px solid var(--special-text); */
     border-radius: 400px;
     text-decoration: none;
 }
 
 .hero .container .hero-heading .links {
-    padding-top: 20px;
+    padding-top: 2vh;
 }
 
 .hero .container .hero-heading .links a {
-    padding-right: 10px;
+    padding-right: 1vw;
     color: var(--special-text);
 }
 
 
 /* Section Skills */
 .skills .container {
-    padding: 100px 40px 100px 40px;
+    padding: 10vh 2vw;
     display: flex;
 }
 
@@ -135,7 +134,7 @@ body {
 }
 
 .skill-card {
-    padding-right: 10px;
+    padding-right: 0.5vw;
 }
 
 .skill-card h6 {
@@ -143,7 +142,7 @@ body {
     border: 1px solid var(--regular-text);
     border-radius: 400px;
     padding: 0px 10px;
-    min-width: 100px;
+    min-width: 5vw;
     text-align: center;
     font-weight: lighter;
     
@@ -151,24 +150,24 @@ body {
 
 /* Section Portfolio */
 .portfolio .container {
-    padding: 100px 40px 100px 40px;        
+    padding: 10vh 2vw;      
 }
 
 .portfolio .container .projects {
     display: flex;    
-    gap: 10px;     
+    gap: 0.5vw;     
 }
 
 /* Project Card */
 .project-card {
-    height: 400px;
+    height: 60vh;
 }
 .project-card img {
     height: inherit;
-    max-width: 200px;
+    max-width: 10vw;
     object-fit: cover;
     object-position: left;
-    opacity: 0.5;
+    opacity: 0.7;
     transition: 1s;
 }
 
@@ -177,14 +176,14 @@ body {
 }
 
 .project-card.active img {
-    max-width: 840px;
+    max-width: 40vw;
     transition: 1s;
     opacity: 1;
 }
 
 /* Project Description */
 .project-description {
-    padding-top: 10px;
+    padding-top: 1vh;
     color: var(--special-text);
     /* text-align: center; */
     display: none;
@@ -201,7 +200,7 @@ body {
 
 .project-link {
     color: var(--special-text);
-    padding-right: 10px;
+    padding-right: 1vw;
     text-decoration: none;
 }
 
@@ -230,7 +229,7 @@ body {
     position: fixed;
     top: 0;
     right: -300px;
-    width: 250px;
+    width: 150px;
     height: 100%;
     z-index: 100;
     background: black;
@@ -240,6 +239,7 @@ body {
 
 .mobile-menu.active {
     right: 0px;
+    text-align: right;
 }       
 
 .mobile-menu ul {
@@ -304,11 +304,29 @@ small {
 
 
 /* Media Queries */
-@media (max-width: 670px) {
-    
+@media (max-width: 711px) {
+    /* Hero */
+    .hero .container {
+        display: grid;
+        /* padding: 0px 5px; */
+    }
+
+    .hero .container .hero-heading {
+        grid-row: 2;
+        text-align: left;
+    }
+
+    /* Skills */
+    .skills .container {
+        display: block;
+    }
+
+    .skills-content {
+        display: block;
+    }
 }
 
-@media (max-width: 376px) { 
+ @media (max-width: 376px) { 
     .content {
         border-width: 0px;
     }
@@ -329,46 +347,5 @@ small {
     .hamburger-button {
         display: block;
     }
+} 
 
-    /* Hero */
-    .hero .container {
-        display: grid;
-        padding: 0px 5px;
-    }
-
-    .hero .container .hero-heading {
-        grid-row: 2;
-        text-align: left;
-        padding-left: 10px;
-    }
-
-    .hero .container .hero-image img {
-        max-width: 250px;
-    }
-
-    /* Portfolio */
-    .portfolio .container {
-        padding: 100px 10px;
-    }
-
-    .portfolio .container .projects {
-        gap: 5px;
-    }
-
-    .project-card img {
-        max-width: 60px;
-    }
-
-    .project-card.active img {
-        max-width: 200px;
-    }
-
-    /* Skills */
-    .skills .container {
-        display: block;
-    }
-
-    .skills-content {
-        display: block;
-    }
-}
